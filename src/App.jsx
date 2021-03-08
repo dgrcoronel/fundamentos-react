@@ -12,6 +12,7 @@ import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAluno from "./components/repeticao/ListaAlunos";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 export default function App(props) {
   return (
@@ -19,8 +20,11 @@ export default function App(props) {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        
         <Card titulo="#08 - ParOuImpar" color="#982395">
           <ParOuImpar>{21}</ParOuImpar>
+          <UsuarioInfo usuario={{nome: 'Fernando'}}></UsuarioInfo>
+          <UsuarioInfo usuario={{}}></UsuarioInfo>
         </Card>
 
         <Card titulo="#07 - Lista Produtos" color="#3A9AD9">
