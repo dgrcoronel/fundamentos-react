@@ -11,6 +11,7 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAluno from "./components/repeticao/ListaAlunos";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 
 export default function App(props) {
   return (
@@ -18,11 +19,14 @@ export default function App(props) {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
+        <Card titulo="#08 - ParOuImpar" color="#982395">
+          <ParOuImpar>{21}</ParOuImpar>
+        </Card>
 
-      <Card titulo="#07 - Lista Produtos" color="#3A9AD9">
+        <Card titulo="#07 - Lista Produtos" color="#3A9AD9">
           <ListaProdutos></ListaProdutos>
         </Card>
-        
+
         <Card titulo="#06 - Repetição" color="#FF4C65">
           <ListaAluno></ListaAluno>
         </Card>
