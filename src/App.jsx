@@ -16,7 +16,8 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaFilho";
 import Input from "./components/formulario/Input";
-import Contador from "./components/contador/Contador"
+import Contador from "./components/contador/Contador";
+import Contador2 from "./components/contador/Contador2";
 
 export default function App(props) {
   return (
@@ -24,7 +25,12 @@ export default function App(props) {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
-      <Card titulo="#12 - Contador" color="#424242">
+
+      <Card titulo="#13 - Contador com componentes" color="#424242">
+          <Contador2 numeroInicial={10}></Contador2>
+        </Card>
+
+        <Card titulo="#12 - Contador" color="#424242">
           <Contador numeroInicial={10}></Contador>
         </Card>
 
